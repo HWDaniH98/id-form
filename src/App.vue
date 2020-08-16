@@ -108,6 +108,17 @@
             ]
           },
           {
+            /*Bosnian IDs*/
+            country: "Bosnia and Herzegovinia",
+            types:
+            [
+              {
+                symbol: "BA",
+                name: "Jedinstveni matični broj građana"
+              }
+            ]
+          },
+          {
             /*Brazilian IDs*/
             country: "Brazil",
             types:
@@ -127,6 +138,17 @@
               {
                 symbol: "EN",
                 name: "Election Identification Number"
+              }
+            ]
+          },
+          {
+            /*Bulgarian IDs*/
+            country: "Bulgaria",
+            types:
+            [
+              {
+                symbol: "BG",
+                name: "Единен граждански номер"
               }
             ]
           },
@@ -261,6 +283,17 @@
             ]
           },
           {
+            /*Icelandic IDs*/
+            country: "Iceland",
+            types:
+            [
+              {
+                symbol: "IS",
+                name: "Kennitala"
+              }
+            ]
+          },
+          {
             /*Indian IDs*/
             country: "India",
             types:
@@ -331,13 +364,57 @@
             ]
           },
           {
-            /*Kazakhstan*/
+            /*Lithuanian IDs*/
+            country: "Lithuania",
+            types:
+            [
+              {
+                symbol: "LT",
+                name: "Asmens kodas"
+              }
+            ]
+          },
+          {
+            /*Luxembourgish IDs*/
+            country: "Luxembourg",
+            types:
+            [
+              {
+                symbol: "LU",
+                name: "Identification code"
+              }
+            ]
+          },
+          {
+            /*Kazakhstani IDs*/
             country: "Kazakhstan",
             types:
             [
               {
                 symbol: "KZ",
                 name: "Individual Identification Number"
+              }
+            ]
+          },
+          {
+            /*Kuwaiti IDs*/
+            country: "Kuwait",
+            types:
+            [
+              {
+                symbol: "KW",
+                name: "الرقم المدني‎"
+              }
+            ]
+          },
+          {
+            /*Macau IDs*/
+            country: "Macau",
+            types:
+            [
+              {
+                symbol: "MO",
+                name: "BIRP Identification Number"
               }
             ]
           },
@@ -368,6 +445,28 @@
             ]
           },
           {
+            /*Moldovan IDs*/
+            country: "Moldova",
+            types:
+            [
+              {
+                symbol: "MD",
+                name: "Personal Code"
+              }
+            ]
+          },
+          {
+            /*Montenegrin IDs*/
+            country: "Montenegro",
+            types:
+            [
+              {
+                symbol: "ME",
+                name: "Jedinstveni matični broj građana"
+              }
+            ]
+          },
+          {
             /*Dutch IDs*/
             country: "Netherlands",
             types:
@@ -390,6 +489,17 @@
             ]
           },
           {
+            /*North Macedonian IDs*/
+            country: "North Macedonia",
+            types:
+            [
+              {
+                symbol: "MK",
+                name: "Единствен матичен број на граѓанинот"
+              }
+            ]
+          },
+          {
             /*Norway IDs*/
             country: "Norway",
             types:
@@ -397,6 +507,17 @@
               {
                 symbol: "NO",
                 name: "Fødselsnummer"
+              }
+            ]
+          },
+          {
+            /*Pakistani IDs*/
+            country: "Pakistan",
+            types:
+            [
+              {
+                symbol: "PK",
+                name: "NIC number"
               }
             ]
           },
@@ -454,6 +575,39 @@
             ]
           },
           {
+            /*Romanian IDs*/
+            country: "Romania",
+            types:
+            [
+              {
+                symbol: "RO",
+                name: "Cod Numeric Personal"
+              }
+            ]
+          },
+          {
+            /*IDs of San Marino*/
+            country: "San Marino",
+            types:
+            [
+              {
+                symbol: "SM",
+                name: "Codice ISS"
+              }
+            ]
+          },
+          {
+            /*Serbian IDs*/
+            country: "Serbia",
+            types:
+            [
+              {
+                symbol: "RS",
+                name: "Јединствени матични број грађана"
+              }
+            ]
+          },
+          {
             /*Singaporean IDs*/
             country: "Singapore",
             types:
@@ -465,6 +619,32 @@
               {
                 symbol: "FI",
                 name: "Foreign Identification Number"
+              }
+            ]
+          },
+          {
+            /*Slovak IDs*/
+            country: "Slovakia",
+            types:
+            [
+              {
+                symbol: "BN",
+                name: "Rodné číslo"
+              },
+              {
+                symbol: "AX",
+                name: "Číslo občianskeho preukazu"
+              }
+            ]
+          },
+          {
+            /*Slovene IDs*/
+            country: "Slovenia",
+            types:
+            [
+              {
+                symbol: "SI",
+                name: "Enotna matična številka občana"
               }
             ]
           },
@@ -502,6 +682,31 @@
             ]
           },
           {
+            /*Spanish IDs*/
+          },
+          {
+            /*Thai IDs*/
+            country: "Thailand",
+            types:
+            [
+              {
+                symbol: "TH",
+                name: "Population Identification Code"
+              }
+            ]
+          },
+          {
+            /*UAE IDs*/
+            country: "United Arab Emirates",
+            types:
+            [
+              {
+                symbol: "AE",
+                name: "Identification Number"
+              }
+            ]
+          },
+          {
             /*US IDs*/
             country: "United States",
             types:
@@ -513,6 +718,17 @@
               {
                 symbol: "TN",
                 name: "Tax Identification Number"
+              }
+            ]
+          },
+          {
+            /*Vietnamese IDs*/
+            country: "Vietnam",
+            types:
+            [
+              {
+                symbol: "VN",
+                name: "ID card number"
               }
             ]
           },

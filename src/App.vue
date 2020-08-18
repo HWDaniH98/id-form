@@ -18,6 +18,7 @@
       </div>
 
       <div>
+        <label for="countryCode">Phone Number</label>
         <!-- Selects country code -->
         <select name = "countryCode" id = "countryCode" v-model ="countryCode">
           <option disabled>Select country code</option>
@@ -680,9 +681,6 @@
                 name: "National Identification number"
               }
             ]
-          },
-          {
-            /*Spanish IDs*/
           },
           {
             /*Thai IDs*/

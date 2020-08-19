@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <form>
+    <form v-on:submit.prevent>
       <div>
         <!-- Selects country -->
         <select name="country" id="country" v-model="country">
@@ -20,17 +20,18 @@
       <div>
         <label for="countryCode">Phone Number</label>
         <!-- Selects country code -->
-        <select name = "countryCode" id = "countryCode" v-model ="countryCode">
+        <select name = "countryCode" id = "countryCode" v-model="countryCode">
           <option disabled>Select country code</option>
-          <option v-for="code in countryCodes" :key="code">{{code.name}}</option>
+          <option v-for="code in countryCodes" :key="code" v-bind:value="code">{{code.name}}</option>
         </select>
         <!-- Records intranational phone number -->
-        <!-- <label for="localNum">Phone Number</label> -->
         <input type="text" id="localNum" v-model.number="localNum">
         <!-- Triggers a method which concatenates country code and number -->
-        <button v-on:click="findPhoneNumber">Send</button>
+        <button v-on:click="phoneNumber">Send</button>
       </div>
     </form>
+    <!-- Displays input information -->
+    <p v-if="phoneNum !== ''">Your ID is {{idNum}} and your phone number is {{phoneNum}}.</p>
   </div>
 </template>
 
@@ -1611,7 +1612,7 @@
       //Records international phone number
       phoneNumber()
       {
-        this.phoneNum = this.countryCode.num + toString(this.localNum);
+        this.phoneNum = this.countryCode.num + this.localNum.toString();
       }
     }
   }

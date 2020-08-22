@@ -5,7 +5,7 @@
         <!-- Selects country -->
         <select name="country" id="country" v-model="country">
           <option disabled>Select country/region</option>
-          <option v-for="choice in idTypes" :key="choice.country">{{choice.country}}</option>
+          <option v-for="choice in idTypes" :key="choice" v-bind:value="choice">{{choice.country}}</option>
         </select>
         <!-- Selects form of ID -->
         <select name="type" id="type" v-model="idType">
@@ -22,7 +22,7 @@
         <!-- Selects country code -->
         <select name = "countryCode" id = "countryCode" v-model="countryCode">
           <option disabled>Select country code</option>
-          <option v-for="code in countryCodes" :key="code" v-bind:value="code">{{code.name}}</option>
+          <option v-for="code in country.num" :key="code" v-bind:value="code">{{code}}</option>
         </select>
         <!-- Records intranational phone number -->
         <input type="text" id="localNum" v-model.number="localNum">
@@ -55,7 +55,8 @@
                 symbol: "AL",
                 name: "Numri i Identitetit"
               }
-            ]
+            ],
+            num: ["+355"]
           },
           {
             /*Argentinian IDs*/
@@ -74,7 +75,8 @@
                 symbol: "CL",
                 name: "Código de Identificación Laboral"
               }
-            ]
+            ],
+            num: ["+54"]
           },
           {
             /*Austrian IDs*/
@@ -85,7 +87,8 @@
                 symbol: "AT",
                 name: "Sector-Specific Personal Identifier"
               }
-            ]
+            ],
+            num: ["+43"]
           },
           {
             /*Bahrain IDs*/
@@ -96,7 +99,8 @@
                 symbol: "BH",
                 name: "الرقم الشخصي‎"
               }
-            ]
+            ],
+            num: ["+973"]
           },
           {
             /*Belgian IDs*/
@@ -107,7 +111,8 @@
                 symbol: "BE",
                 name: "National Register Number"
               }
-            ]
+            ],
+            num: ["+32"]
           },
           {
             /*Bosnian IDs*/
@@ -118,7 +123,8 @@
                 symbol: "BA",
                 name: "Jedinstveni matični broj građana"
               }
-            ]
+            ],
+            num: ["+387"]
           },
           {
             /*Brazilian IDs*/
@@ -141,7 +147,8 @@
                 symbol: "EN",
                 name: "Election Identification Number"
               }
-            ]
+            ],
+            num: ["+55"]
           },
           {
             /*Bulgarian IDs*/
@@ -152,7 +159,8 @@
                 symbol: "BG",
                 name: "Единен граждански номер"
               }
-            ]
+            ],
+            num: ["+359"]
           },
           {
             /*Chinese IDs*/
@@ -163,7 +171,8 @@
                 symbol: "CN",
                 name: "Identity card number"
               }
-            ]
+            ],
+            num: ["+86"]
           },
           {
             /*Chilean IDs*/
@@ -174,7 +183,8 @@
                 symbol: "CL",
                 name: "Rol Único Nacional"
               }
-            ]
+            ],
+            num: ["+56"]
           },
           {
             /*Colombian IDs*/
@@ -205,7 +215,8 @@
                 symbol: "PA",
                 name: "Pasaporte"
               }
-            ]
+            ],
+            num: ["+57"]
           },
           {
             /*Croatian IDs*/
@@ -216,7 +227,8 @@
                 symbol: "HR",
                 name: "Osobni identifikacijski broj"
               }
-            ]
+            ],
+            num: ["+385"]
           },
           {
             /*Czech IDs*/
@@ -227,7 +239,8 @@
                 symbol: "CZ",
                 name: "Rodné číslo"
               }
-            ]
+            ],
+            num: ["+420"]
           },
           {
             /*Danish IDs*/
@@ -238,7 +251,8 @@
                 symbol: "DK",
                 name: "Centrale Personregister"
               }
-            ]
+            ],
+            num: ["+45"]
           },
           {
             /*Estonian IDs*/
@@ -249,7 +263,8 @@
                 symbol: "EE",
                 name: "Isikukood"
               }
-            ]
+            ],
+            num: ["+372"]
           },
           {
             /*Finnish IDs*/
@@ -260,7 +275,8 @@
                 symbol: "FI",
                 name: "Henkilötunnus"
               }
-            ]
+            ],
+            num: ["+358"]
           },
           {
             /*French IDs*/
@@ -271,7 +287,8 @@
                 symbol: "FR",
                 name: "INSEE code"
               }
-            ]
+            ],
+            num: ["+33"]
           },
           {
             /*Hong Kong IDs*/
@@ -282,7 +299,8 @@
                 symbol: "HK",
                 name: "HKID number"
               }
-            ]
+            ],
+            num: ["+852"]
           },
           {
             /*Icelandic IDs*/
@@ -293,7 +311,8 @@
                 symbol: "IS",
                 name: "Kennitala"
               }
-            ]
+            ],
+            num: ["+354"]
           },
           {
             /*Indian IDs*/
@@ -308,7 +327,8 @@
                 symbol: "AN",
                 name: "Aadhaar number"
               }
-            ]
+            ],
+            num: ["+91"]
           },
           {
             /*Indonesian IDs*/
@@ -319,7 +339,8 @@
                 symbol: "ID",
                 name: "Nomor Induk Kependudukan"
               }
-            ]
+            ],
+            num: ["+62"]
           },
           {
             /*Iranian IDs*/
@@ -330,7 +351,8 @@
                 symbol: "IR",
                 name: "National Identification Number"
               }
-            ]
+            ],
+            num: ["+98"]
           },
           {
             /*Israel IDs*/
@@ -341,7 +363,8 @@
                 symbol: "IL",
                 name: "מספר זהות"
               }
-            ]
+            ],
+            num: ["+972"]
           },
           {
             /*Italian IDs*/
@@ -352,7 +375,8 @@
                 symbol: "IT",
                 name: "Codice fiscale"
               }
-            ]
+            ],
+            num: ["+39"]
           },
           {
             /*Japanese IDs*/
@@ -363,7 +387,8 @@
                 symbol: "JP",
                 name: "マイナンバー"
               }
-            ]
+            ],
+            num: ["+81"]
           },
           {
             /*Lithuanian IDs*/
@@ -374,7 +399,8 @@
                 symbol: "LT",
                 name: "Asmens kodas"
               }
-            ]
+            ],
+            num: ["+370"]
           },
           {
             /*Luxembourgish IDs*/
@@ -385,7 +411,8 @@
                 symbol: "LU",
                 name: "Identification code"
               }
-            ]
+            ],
+            num: ["+352"]
           },
           {
             /*Kazakhstani IDs*/
@@ -396,7 +423,8 @@
                 symbol: "KZ",
                 name: "Individual Identification Number"
               }
-            ]
+            ],
+            num: ["+7", "+997"]
           },
           {
             /*Kuwaiti IDs*/
@@ -407,7 +435,8 @@
                 symbol: "KW",
                 name: "الرقم المدني‎"
               }
-            ]
+            ],
+            num: "+965"
           },
           {
             /*Macau IDs*/
@@ -418,7 +447,8 @@
                 symbol: "MO",
                 name: "BIRP Identification Number"
               }
-            ]
+            ],
+            num: ["+853"]
           },
           {
             /*Malaysian IDs*/
@@ -429,7 +459,8 @@
                 symbol: "MY",
                 name: "National Registration Identification Card Number"
               }
-            ]
+            ],
+            num: ["+60"]
           },
           {
             /*Mexican IDs*/
@@ -444,7 +475,8 @@
                 symbol: "RF",
                 name: "Registro Federal del Contribuyente"
               }
-            ]
+            ],
+            num: ["+52"]
           },
           {
             /*Moldovan IDs*/
@@ -455,7 +487,8 @@
                 symbol: "MD",
                 name: "Personal Code"
               }
-            ]
+            ],
+            num: ["+373"]
           },
           {
             /*Montenegrin IDs*/
@@ -466,7 +499,8 @@
                 symbol: "ME",
                 name: "Jedinstveni matični broj građana"
               }
-            ]
+            ],
+            num: ["+382"]
           },
           {
             /*Dutch IDs*/
@@ -477,7 +511,8 @@
                 symbol: "NL",
                 name: "Burgerservicenummer"
               }
-            ]
+            ],
+            num: ["+31"]
           },
           {
             /*Nigerian IDs*/
@@ -488,7 +523,8 @@
                 symbol: "NG",
                 name: "Nationial Identification Number"
               }
-            ]
+            ],
+            num: ["+234"]
           },
           {
             /*North Macedonian IDs*/
@@ -499,7 +535,8 @@
                 symbol: "MK",
                 name: "Единствен матичен број на граѓанинот"
               }
-            ]
+            ],
+            num: ["+389"]
           },
           {
             /*Norway IDs*/
@@ -510,7 +547,8 @@
                 symbol: "NO",
                 name: "Fødselsnummer"
               }
-            ]
+            ],
+            num: ["+47"]
           },
           {
             /*Pakistani IDs*/
@@ -521,7 +559,8 @@
                 symbol: "PK",
                 name: "NIC number"
               }
-            ]
+            ],
+            num: ["+92"]
           },
           {
             /*Phillipino IDs*/
@@ -532,7 +571,8 @@
                 symbol: "PH",
                 name: "PhilSys number"
               }
-            ]
+            ],
+            num: ["+63"]
           },
           {
             /*Polish IDs*/
@@ -543,7 +583,8 @@
                 symbol: "PL",
                 name: "PESEL Number"
               }
-            ]
+            ],
+            num: ["+48"]
           },
           {
             /*Portuguese IDs*/
@@ -574,7 +615,8 @@
                 symbol: "ND",
                 name: "Número de carta de condução"
               }
-            ]
+            ],
+            num: ["+351"]
           },
           {
             /*Romanian IDs*/
@@ -585,7 +627,8 @@
                 symbol: "RO",
                 name: "Cod Numeric Personal"
               }
-            ]
+            ],
+            num: ["+40"]
           },
           {
             /*IDs of San Marino*/
@@ -596,7 +639,8 @@
                 symbol: "SM",
                 name: "Codice ISS"
               }
-            ]
+            ],
+            num: ["+378"]
           },
           {
             /*Serbian IDs*/
@@ -607,7 +651,8 @@
                 symbol: "RS",
                 name: "Јединствени матични број грађана"
               }
-            ]
+            ],
+            num: ["+381"]
           },
           {
             /*Singaporean IDs*/
@@ -622,7 +667,8 @@
                 symbol: "FI",
                 name: "Foreign Identification Number"
               }
-            ]
+            ],
+            num: ["+65"]
           },
           {
             /*Slovak IDs*/
@@ -637,7 +683,8 @@
                 symbol: "AX",
                 name: "Číslo občianskeho preukazu"
               }
-            ]
+            ],
+            num: ["+421"]
           },
           {
             /*Slovene IDs*/
@@ -648,7 +695,8 @@
                 symbol: "SI",
                 name: "Enotna matična številka občana"
               }
-            ]
+            ],
+            num: ["+386"]
           },
           {
             /*South African IDs*/
@@ -659,7 +707,8 @@
                 symbol: "ZA",
                 name: "Person Identification Number"
               }
-            ]
+            ],
+            num: ["+27"]
           },
           {
             /*South Korean IDs*/
@@ -670,7 +719,8 @@
                 symbol: "KR",
                 name: "Resident registration number"
               }
-            ]
+            ],
+            num: ["+82"]
           },
           {
             /*Taiwanese IDs*/
@@ -681,7 +731,8 @@
                 symbol: "TW",
                 name: "National Identification number"
               }
-            ]
+            ],
+            num: ["+886"]
           },
           {
             /*Thai IDs*/
@@ -692,7 +743,8 @@
                 symbol: "TH",
                 name: "Population Identification Code"
               }
-            ]
+            ],
+            num: ["+66"]
           },
           {
             /*UAE IDs*/
@@ -703,7 +755,8 @@
                 symbol: "AE",
                 name: "Identification Number"
               }
-            ]
+            ],
+            num: ["+971"]
           },
           {
             /*US IDs*/
@@ -718,7 +771,8 @@
                 symbol: "TN",
                 name: "Tax Identification Number"
               }
-            ]
+            ],
+            num: ["+1"]
           },
           {
             /*Vietnamese IDs*/
@@ -729,7 +783,8 @@
                 symbol: "VN",
                 name: "ID card number"
               }
-            ]
+            ],
+            num: ["+84"]
           },
           {
             /*Zimbabwe IDs*/
@@ -740,7 +795,8 @@
                 symbol: "ZW",
                 name: "National ID Number"
               }
-            ]
+            ],
+            num: ["+263"]
           }
         ],
 
@@ -748,9 +804,9 @@
         idType: "",
         idNum: "",
 
-        //Used to suggest and record country code
+        //Used to record country code
         countryCode: "",
-        countryCodes:
+        /*countryCodes:
         [
           {
             name: "US or Canada (+1)",
@@ -893,7 +949,7 @@
             num: "+246"
           },
           {
-            name: "Ascension Island (+247)",
+            name: "🇦🇨 Ascension Island (+247)",
             num: "+247"
           },
           {
@@ -1006,7 +1062,7 @@
           },
           {
             name: "Netherlands (+31)",
-            num: "+30"
+            num: "+31"
           },
           {
             name: "Belgium (+32)",
@@ -1093,7 +1149,7 @@
             num: "+375"
           },
           {
-            name: "Andorra (+376)",
+            name: "🇦🇩 Andorra (+376)",
             num: "+376"
           },
           {
@@ -1584,7 +1640,7 @@
             name: "Uzbekistan (+998)",
             num: "+998"
           }
-        ],
+        ],*/
 
         //Used to record phone numbers
         localNum: "", //Intranational number
@@ -1596,14 +1652,14 @@
       //Selects the set of IDs associated with the country you choose
       ids()
       {
-        let options = [];
-        for (let i = 0; i < this.idTypes.length; i++)
+        let options = this.country.types;
+        /*for (let i = 0; i < this.idTypes.length; i++)
         {
           if (this.country === this.idTypes[i].country)
           {
             options = this.idTypes[i].types;
           }
-        }
+        }*/
         return options;
       }
     },
@@ -1612,7 +1668,7 @@
       //Records international phone number
       phoneNumber()
       {
-        this.phoneNum = this.countryCode.num + this.localNum.toString();
+        this.phoneNum = this.countryCode + this.localNum.toString();
       }
     }
   }
